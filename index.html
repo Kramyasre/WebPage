@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrackPro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>FinTrackPro</h1>
+      <p>Your Personal Expense Manager</p>
+      <ul>
+        <li>Dashboard</li>
+        <li>Expense Tracking</li>
+        <li>Budget Management</li>
+        <li>Secure Data Handling</li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h2>Dashboard</h2>
+      </header>
+      <section class="overview">
+        <div class="card">
+          <h3>Income Overview</h3>
+          <p>$12,000</p>
+        </div>
+        <div class="card">
+          <h3>Budget</h3>
+          <p>$10,000</p>
+        </div>
+        <div class="card">
+          <h3>Expenses</h3>
+          <p>$2,000</p>
+        </div>
+      </section>
+      <section class="chart">
+        <h3>Income vs Expenses</h3>
+        <canvas id="chart" width="400" height="200"></canvas>
+      </section>
+      <section class="recent-expenses">
+        <h3>Recent Expenses</h3>
+        <ul id="expense-list">
+          <li>Groceries - $150</li>
+          <li>Rent - $1,000</li>
+          <li>Utilities - $200</li>
+        </ul>
+        <button id="add-expense">Add Expense</button>
+        <button id="remove-expense">Remove Expense</button>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
